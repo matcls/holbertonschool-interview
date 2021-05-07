@@ -14,7 +14,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (!node)
 		return (NULL);
 
-	/*Assign memory*/
+	/*set memory*/
 	memset(node, 0, sizeof(*node));
 	node->parent = parent;
 	node->n = value;
