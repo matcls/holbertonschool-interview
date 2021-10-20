@@ -1,20 +1,19 @@
 #!/usr/bin/python3
 """Module to solve the N queens problem."""
 
+import sys
 
-from sys import argv, exit as status
-
-if len(argv) != 2:
+if len(sys.argv) != 2:
     print("Usage: nqueens N")
-    status(1)
+    sys.exit(1)
 try:
-    N = int(argv[1])
+    N = int(sys.argv[1])
 except ValueError:
     print("N must be a number")
-    status(1)
+    sys.exit(1)
 if N < 4:
     print("N must be at least 4")
-    status(1)
+    sys.exit(1)
 
 queens = [[i, -1] for i in range(N)]
 
@@ -71,6 +70,6 @@ def solve_nq(queen):
                 solve_nq(queen + 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     QUEEN = 0
     solve_nq(QUEEN)
