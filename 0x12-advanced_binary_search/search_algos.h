@@ -6,4 +6,4 @@
 
 int advanced_binary(int *array, size_t size, int value);
 
-#endif/* SORTING_ALGOS_H* /
+#endif /* SORTING_ALGOS_H */
