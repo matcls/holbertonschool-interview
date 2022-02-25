@@ -50,3 +50,6 @@ $./0-main.py
 12
 $
 ```
+
+## Author
+* **Manuel Torres Vesga** - [matcls](https://github.com/matcls)
